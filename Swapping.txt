@@ -1,7 +1,6 @@
 public class swapping {
     public static void main(String args[]) {
 
-
         int e = 10;
         int f = 5;
         e = e ^ f;
