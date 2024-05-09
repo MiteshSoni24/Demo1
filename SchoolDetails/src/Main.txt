@@ -1,0 +1,23 @@
+import Task.Standard;
+import Task.Student;
+import Task.Subject;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Subject subject=new Subject("Maths","English","Hindi");
+        Standard standard=new Standard("Tenth","Eleventh","Twelth");
+        Student student=new Student("Mohit",18,standard,subject);
+
+        System.out.println("Student Detail");
+        System.out.println(student);
+        Subject studSubject=student.getSubject();
+        System.out.println("Subjects: ");
+        System.out.println(studSubject);
+        Standard stand=student.getStandard();
+        System.out.println("Standard: ");
+        System.out.println(stand);
+
+    }
+}
