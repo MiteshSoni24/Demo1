@@ -38,4 +38,8 @@ public class Employee {
     {
         System.out.println(ename+" "+position);
     }
+    public boolean display(String ename){
+        System.out.println(ename+" "+position);
+        return true;
+    }
 }
