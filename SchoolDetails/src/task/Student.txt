@@ -1,0 +1,58 @@
+package Task;
+
+public class Student {
+    private String name;
+    private int age;
+    private Standard standard;
+    private Subject subject;
+
+    public Student(String name,int age, Standard standard, Subject subject)
+    {
+        this.name=name;
+        this.age=age;
+        this.standard=standard;
+        this.subject=subject;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Standard getStandard() {
+        return standard;
+    }
+
+    public void setStandard(Standard standard) {
+        this.standard = standard;
+    }
+
+    public Subject getSubject() {
+        return subject;
+    }
+
+    public void setSubject(Subject subject) {
+        this.subject = subject;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", standard=" + standard +
+                ", subject=" + subject +
+                '}';
+    }
+}
